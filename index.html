@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Name: Abdullah Khan
+Date: 10.14.2026
+Course: CSC 372-01
+Description: HTML structure for the TVmaze Show Gallery.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TVmaze Show Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>TVmaze Show Gallery</h1>
+        <p>Find information about your favorite TV shows!</p>
+    </header>
+
+    <main>
+
+        <section class="search-section">
+            <h2>Search TV Shows</h2>
+
+            <form id="search-form">
+                <input type="text" id="search-input"
+                       placeholder="Enter a TV show name"
+                       aria-label="TV show name">
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <section id="show-gallery" aria-label="TV show results">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Show information provided by
+            <a href="https://www.tvmaze.com/"
+               target="_blank"
+               rel="noopener noreferrer">TVmaze</a>.
+        </p>
+    </footer>
+
+</body>
+</html>
