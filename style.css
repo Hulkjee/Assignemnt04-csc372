@@ -1,0 +1,197 @@
+/*
+Name: Abdullah Khan
+Date: 10.14.2026
+Course: CSC 372-01
+Description: Styling for the TVmaze Show Gallery.
+*/
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #10151f;
+    color: #f5f5f5;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header */
+header {
+    background-color: #192231;
+    text-align: center;
+    padding: 45px 20px;
+    border-bottom: 3px solid #e50914;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #ffffff;
+}
+
+header p {
+    color: #b8c1cc;
+    margin-bottom: 0;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    flex: 1;
+}
+
+/* Search section */
+.search-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-section h2 {
+    font-size: 26px;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#search-input {
+    width: 350px;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid #495365;
+    border-radius: 6px;
+    background-color: #263244;
+    color: white;
+    font-size: 16px;
+}
+
+#search-input:focus {
+    outline: 2px solid #e50914;
+}
+
+#search-form button {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #b80710;
+}
+
+
+/* Gallery layout */
+#show-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Individual show card */
+.show-card {
+    background-color: #1c2635;
+    border: 1px solid #344054;
+    border-radius: 10px;
+    padding: 20px;
+    width: 340px;
+    max-width: 100%;
+    transition: transform 0.2s;
+}
+
+.show-card:hover {
+    transform: translateY(-5px);
+}
+
+.show-card h3 {
+    color: #ffffff;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.show-card p {
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+.show-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: #111827;
+}
+
+.show-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.show-card a:hover {
+    background-color: #b80710;
+}
+
+/* Loading and error messages */
+#message {
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #192231;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+
+}
+
+footer a {
+    color: #ff6b73;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    #search-input {
+        width: 100%;
+    }
+
+    #search-form button {
+        width: 100%;
+    }
+
+    .show-card {
+        width: 100%;
+    }
+}
